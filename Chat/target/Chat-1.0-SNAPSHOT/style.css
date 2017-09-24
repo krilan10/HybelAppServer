@@ -1,0 +1,36 @@
+* {margin:0;padding:0}
+html,body {
+    width: 100vw;
+    height: 100vh;
+
+}
+input{
+    padding: 5px;
+    margin: 5px 0 5px 10px;
+}
+#forum {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+#conv{
+    min-height: 50%;
+    font-size: 1.1em;
+    
+    
+}
+ul{
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+#conv a{
+    text-decoration: none;
+    color: blue; 
+}
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
