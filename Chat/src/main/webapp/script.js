@@ -1,7 +1,7 @@
 class Convers {
     constructor() {
         this.conv = document.querySelector("#conv");
-            
+
         this.load();
     }
     
@@ -23,8 +23,9 @@ class Convers {
     addConversations(json) {
         this.conv.innerHTML = '';
         let ul = document.createElement('ul');
+        
         for(let i = 0; i < json.length; i++) {
-            
+          
             let li = document.createElement('li');
             let a = document.createElement('a');
             a.innerHTML = json[i].id;
@@ -52,7 +53,7 @@ function  usrname(){
 
 function newConversation(){
     let x = document.forms['form']['conversation'].value;
-
+    
     fetch('api/messages/new?name=' + x,{method: 'POST'});
     
     }

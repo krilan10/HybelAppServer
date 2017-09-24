@@ -8,6 +8,12 @@ class PhotoForum {
        let username = "Anonymous";
        this.name = new URL(document.URL).searchParams.get("name");
        
+       this.photo.innerHTML = '';
+       let h1 = document.createElement('h1');
+       let t = document.createTextNode('Chat room: ' + this.name);
+       h1.appendChild(t);
+       this.photo.appendChild(h1);
+       
         if(getUsername()){
            username = getUsername();
        }
@@ -41,7 +47,7 @@ class PhotoForum {
            let ul = document.createElement('ul');
            event.data.map(message => {
               let li = document.createElement('li');
-              li.innerHTML = `${message.user} - ${message.text}`;
+              li.innerHTML = `${message.user}: ${message.text}`;
               ul.appendChild(li);
            });
            this.forum.appendChild(ul);
