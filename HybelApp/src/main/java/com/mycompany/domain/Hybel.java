@@ -5,10 +5,32 @@
  */
 package com.mycompany.domain;
 
+import java.io.Serializable;
+import java.sql.Timestamp;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Version;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlRootElement;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 /**
  *
  * @author kristian
  */
-public class Hybel {
+@Entity
+@Data @AllArgsConstructor @NoArgsConstructor
+@XmlRootElement @XmlAccessorType(XmlAccessType.FIELD)
+public class Hybel implements Serializable {
     
+    @Id 
+    String id;
+    @Version
+    Timestamp version;
+        public Hybel (String id){
+        this.id = id;
+    }
 }

@@ -25,7 +25,7 @@ public class RestConfig extends Application{
     }
 
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(com.mycompany.hybelapp.UserService.class);
+        resources.add(com.mycompany.hybelapp.HybelService.class);
         
     }
     

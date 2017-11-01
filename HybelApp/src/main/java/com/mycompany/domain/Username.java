@@ -8,7 +8,6 @@ package com.mycompany.domain;
 import java.io.Serializable;
 import java.sql.Timestamp;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Version;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -26,13 +25,13 @@ import lombok.NoArgsConstructor;
 @Entity
 @Data @AllArgsConstructor @NoArgsConstructor
 @XmlRootElement @XmlAccessorType(XmlAccessType.FIELD)
-public class Users implements Serializable{
-    @Id @GeneratedValue
+public class Username implements Serializable{
+    @Id 
     String id;
     @Version
     Timestamp version;
     
-    public Users (String id){
+    public Username (String id){
         this.id = id;
     }
     
