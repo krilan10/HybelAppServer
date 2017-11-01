@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat service</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Chat rooms</h1>
+        <div id="conv"></div>
+        <h2>Choose a username</h2>
+        <form name="userForm" onsubmit="usrname()" >
+            <input type="text" placeholder="Username" name="usr"/>
+            <input type="submit" value="Submit"/>
+            <input type="hidden" id="user" value=""/>
+        </form>
+        <h2>Create new chat room</h2>
+        <form name="form" onsubmit="newConversation()" >
+            <input type="text" placeholder="New conversation" name="conversation"/>
+            <input type="submit" value="Add"/>
+        </form>
+        
+        <script src="script.js"></script>       
+    </body>
+</html>
