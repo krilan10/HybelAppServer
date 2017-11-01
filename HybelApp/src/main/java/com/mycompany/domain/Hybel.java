@@ -30,7 +30,7 @@ public class Hybel implements Serializable {
     String id;
     @Version
     Timestamp version;
-        public Hybel (String id){
+    public Hybel (String id){
         this.id = id;
     }
 }
