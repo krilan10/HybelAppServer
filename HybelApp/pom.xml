@@ -23,10 +23,11 @@
             <version>2.25.1</version>
             <type>jar</type>
         </dependency>
+        
         <dependency>
-            <groupId>javax</groupId>
+            <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.16.10</version>
+            <version>1.16.18</version>
             <type>jar</type>
         </dependency>
         <dependency>

@@ -1,4 +1,4 @@
-Domain/Hybel.class
-com/mycompany/hybelapp/RestConfig.class
-Domain/User.class
-com/mycompany/hybelapp/UserService.class
+com\mycompany\domain\Hybel.class
+com\mycompany\hybelapp\RestConfig.class
+com\mycompany\hybelapp\UserService.class
+com\mycompany\domain\Users.class
